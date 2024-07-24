@@ -42,9 +42,10 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"></i>SAFORMASA</h2>
+            <img src="img/logo-saformasa.png" alt="Logo"> <!-- Ganti dengan path gambar Anda -->
+            <h2 class="m-0 text-primary" >SAFORMASA</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -63,6 +64,15 @@
     <div class="container-fluid container-card">
         <div class="container">
             <div class="row" style="padding: 50px;">
+                <h2>PORTAL SAFORMASA</h2>
+                <p>Satu Informasi, Data dan Aplikasi Terintegrasi ABDYA</p>
+                <div class="search-box mt-4 mb-4">
+                    <div class="searchInputWrapper">
+                        <input class="searchInput" id="searchInput" type="text" placeholder='Cari Aplikasi' autocomplete="off">
+                        <i class="searchInputIcon fas fa-search" onclick="performSearch()"></i>
+                    </div>
+                </div>
+
                 <div class="gcard col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-4 col-4">
                     <a href="https://data.acehbaratdayakab.go.id" target="_blank">
                         <div class="card-image" style="background-image: url('img/open_data.png');"></div>
@@ -184,11 +194,89 @@
                     </a>
                 </div>
                 <div class="gcard col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-4 col-4">
-                    <a href="" target="_blank">
+                    <a href="https://gampong.id/" target="_blank">
                         <div class="card-image" style="background-image: url('img/gampong2.png');"></div>
                         <div class="card-title">GAMPONG.ID</div>
                     </a>
                 </div>
+                <div class="gcard col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-4 col-4">
+                    <a href="https://bumdespinter.acehbaratdayakab.go.id/" target="_blank">
+                        <div class="card-image" style="background-image: url('img/bumdes.png');"></div>
+                        <div class="card-title">BUMDES</div>
+                    </a>
+                </div>
+                <div class="gcard col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-4 col-4">
+                    <a href="https://simbg.pu.go.id/" target="_blank">
+                        <div class="card-image" style="background-image: url('img/pupr.png');"></div>
+                        <div class="card-title">SIMBG</div>
+                    </a>
+                </div>
+                <div class="gcard col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-4 col-4">
+                    <a href="https://acehbaratdayakab.ina-sdi.or.id/jelajah/" target="_blank">
+                        <div class="card-image" style="background-image: url('img/geo.png');"></div>
+                        <div class="card-title">Geoportal</div>
+                    </a>
+                </div>
+                <div class="gcard col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-4 col-4">
+                    <a href="https://jaga.id/?vnk=6f2ae129" target="_blank">
+                        <div class="card-image" style="background-image: url('img/jaga.png');"></div>
+                        <div class="card-title">JAGA</div>
+                    </a>
+                </div>
+                <div class="gcard col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-4 col-4">
+                    <a href="#" target="_blank">
+                        <div class="card-image" style="background-image: url('img/saformasa.png');"></div>
+                        <div class="card-title">SAFORMASA</div>
+                    </a>
+                </div>
+                <div class="gcard col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-4 col-4">
+                    <a href="http://bphtb.acehbaratdayakab.go.id/" target="_blank">
+                        <div class="card-image" style="background-image: url('img/bphtb.png');"></div>
+                        <div class="card-title">e-BPHTB</div>
+                    </a>
+                </div>
+                <div class="gcard col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-4 col-4">
+                    <a href="https://simpkk.acehbaratdayakab.go.id/" target="_blank">
+                        <div class="card-image" style="background-image: url('img/simpkk.png');"></div>
+                        <div class="card-title">SIM-PKK</div>
+                    </a>
+                </div>
+                <div class="gcard col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-4 col-4">
+                    <a href="https://cekdtks.dinsosabdya.com/" target="_blank">
+                        <div class="card-image" style="background-image: url('img/cekdkts.png');"></div>
+                        <div class="card-title">CEK DKTS</div>
+                    </a>
+                </div>
+                <div class="gcard col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-4 col-4">
+                    <a href="https://jdih.acehbaratdayakab.go.id/" target="_blank">
+                        <div class="card-image" style="background-image: url('img/jdih.png');"></div>
+                        <div class="card-title">JDIH</div>
+                    </a>
+                </div>
+                <div class="gcard col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-4 col-4">
+                    <a href="https://jdih-dprk.acehbaratdayakab.go.id/" target="_blank">
+                        <div class="card-image" style="background-image: url('img/jdih-dprk.png');"></div>
+                        <div class="card-title">JDIH DPRK</div>
+                    </a>
+                </div>
+                <div class="gcard col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-4 col-4">
+                    <a href="https://dayah.id/" target="_blank">
+                        <div class="card-image" style="background-image: url('img/dayah.png');"></div>
+                        <div class="card-title">Dayah.id</div>
+                    </a>
+                </div>
+                <div class="gcard col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-4 col-4">
+                    <a href="https://baitulmal.acehbaratdayakab.go.id/#" target="_blank">
+                        <div class="card-image" style="background-image: url('img/sizaki.png');"></div>
+                        <div class="card-title">SIZAKI</div>
+                    </a>
+                </div>
+                <!-- <div class="gcard col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-4 col-4">
+                    <a href="" target="_blank">
+                        <div class="card-image" style="background-image: url('img/.png');"></div>
+                        <div class="card-title"></div>
+                    </a>
+                </div>  -->
             </div>
         </div>
     </div>
@@ -256,12 +344,6 @@
                         &copy; Copyright Diskominsa Aceh Barat Daya 2024 All rights reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        <!-- <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FQAs</a>
-                        </div> -->
                     </div>
                 </div>
             </div>

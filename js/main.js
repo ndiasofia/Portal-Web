@@ -1,3 +1,21 @@
+// Search bar
+function filterCards() {
+    const query = document.getElementById('searchInput').value.toLowerCase();
+    const cards = document.querySelectorAll('.gcard');
+
+    cards.forEach(card => {
+        const title = card.querySelector('.card-title').textContent.toLowerCase();
+        if (title.includes(query)) {
+            card.classList.remove('hidden');
+        } else {
+            card.classList.add('hidden');
+        }
+    });
+}
+
+// Menangani event input untuk real-time search
+document.getElementById('searchInput').addEventListener('input', filterCards);
+
 (function ($) {
     "use strict";
 

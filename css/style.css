@@ -4,6 +4,51 @@
     object-fit: cover;
 } */
 
+h2 {
+    font-size: 48px; /* Ukuran font besar */
+    font-weight: 800; /* Teks tebal */
+    color: white; /* Warna teks putih */
+    font-family: 'Poppins', sans-serif; /* Font yang cantik dari Google Fonts */
+}
+
+.search-box {
+    display: flex;
+    margin: 20px 0;
+}
+
+.searchInputWrapper {
+    position: relative;
+}
+
+.searchInput {
+    width: 300px;
+    padding: 10px 40px 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.2); /* Warna putih transparan */
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.searchInput::placeholder {
+    color: white; /* Warna placeholder teks putih */
+    opacity: 1; /* Pastikan opacity-nya 1 untuk visibilitas penuh */
+}
+
+.searchInputIcon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer; /* Menambahkan kursor pointer untuk ikon */
+}
+
+.gcard.hidden {
+    display: none; /* Menyembunyikan card yang tidak sesuai */
+}
+
+
 .container-card {
     background-image: url('../img/masjid2.png');
     /* background-color: rgba(72, 81, 128, 0.7); */
@@ -126,7 +171,7 @@ body, html {
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .card {
@@ -282,6 +327,11 @@ body, html {
 
 
 /*** Navbar ***/
+.navbar-brand img {
+    height: 60px; /* Sesuaikan dengan ukuran yang Anda inginkan */
+    margin-right: 10px; /* Jarak antara gambar dan teks */
+}
+
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
